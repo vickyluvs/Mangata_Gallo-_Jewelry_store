@@ -103,13 +103,14 @@ main {
 section#info-cards {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 .more-info {
   color: white;
-  padding: 2.5rem;
-  margin-top: 0.5rem;
-  margin-left: 0.4rem;
+  padding: 1.5rem 0.5rem 2.5rem 0.5rem;
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 article.learn-more {
@@ -150,7 +151,8 @@ button {
   color: white;
 }
 
-#learn-more-btn {
+#learn-more-btn,
+#author-btn {
   background-color: #5c657e;
   border: 1px solid #5c657e;
 }
@@ -165,10 +167,6 @@ button {
   border: 1px solid #7b849c;
 }
 
-#img-cards-section {
-  display: flex;
-}
-
 .info-cards-btn:hover {
   cursor: pointer;
   border: 1px solid white;
@@ -178,11 +176,35 @@ button {
 section#img-cards-section {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .showcase-img {
   display: block;
   height: 80%;
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.3rem;
+  /* margin-left: 0.2rem; */
+}
+
+section#owner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: -9rem;
+  /* height: 100vh; */
+}
+
+.mariana-img {
+  width: 100%;
+  display: block;
+}
+
+#meet-the-owner {
+  background-color: #99a5c5;
+  color: white;
+  padding-top: 2rem 2rem 1.5rem 2rem;
+}
+
+#author-btn {
+  margin-bottom: 1rem;
 }
