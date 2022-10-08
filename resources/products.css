@@ -1,1 +1,30 @@
-!
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  font-family: initial;
+  color: black;
+  min-height: 100vh;
+  width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+img {
+  display: block;
+  width: 40%;
+  padding: 1rem;
+  cursor: pointer;
+}
