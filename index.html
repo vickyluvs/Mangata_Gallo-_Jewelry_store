@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=yes" />
+
+    <meta name="HandheldFriendly" content="true" />
+
+    <meta property="og: title" content="Mangata Gallo Jewelry Store" />
+    <meta proper="og: type" content="website" />
+    <meta proper="og:image" content="./resources/images/Asset 3@3x.png" />
+    <meta proper="og: url" content="website link" />
+    <meta
+      proper="og:description"
+      content="Jewelry for Life's favorite moments"
+    />
+    <meta proper="og: site_name" content="Mangata Gallo" />
+    <meta proper="og:locale" content="en_US" />
 
     <!-- style.css link -->
     <link rel="stylesheet" href="./resources/index.css" type="text/css" />
@@ -18,7 +32,12 @@
       <div>
         <a
           href="tel:123-456-7890"
-          style="color: black; font-size: 0.5rem; font-weight: 200"
+          style="
+            color: black;
+            font-size: 0.5rem;
+            font-weight: 200;
+            font-family: initial;
+          "
           >Tel:123-456-7890</a
         >
       </div>
@@ -57,17 +76,60 @@
     </nav>
 
     <div id="banner">
-      <h1>"For Life's Favorite Moment"</h1>
+      <h1>"For Life's Favorite Moments"</h1>
+      <button id="shop-btn" type="sbmit">Shop the Collection</button>
     </div>
 
     <!-- main content starts here -->
     <main>
-      <section>
-        <article>
-          <div><h3></h3></div>
+      <section id="info-cards">
+        <article class="more-info learn-more">
+          <h2>Mangata Gallo</h2>
+          <p>
+            Mangata and Gallo is a jewelry store that specializes in special
+            occasions like engagements, weddings and anniversaries.
+          </p>
+          <button id="learn-more-btn" class="info-cards-btn">Learn more</button>
         </article>
-        <article></article>
-        <article></article>
+        <article class="more-info about">
+          <h2>About Our Jewelry</h2>
+          <p>
+            Mangata & Gallo's selection of jewelry is known for its high-quality
+            and classic look. The owner, an Austin local, is well known for her
+            jewelry designs.
+          </p>
+          <button id="learn-more-btn2" class="info-cards-btn">
+            Learn more
+          </button>
+        </article>
+        <article class="more-info services">
+          <h2>Our Services</h2>
+          <p>
+            We provide a variety of services, including custom jewelry design,
+            jewelry appraisals, jewelry repair, and jewelry restoration.
+          </p>
+          <button id="visit-us-btn" class="info-cards-btn">Visit us</button>
+        </article>
+      </section>
+
+      <section id="img-cards-section">
+        <article>
+          <img
+            class="showcase-img"
+            src="./resources/images/daintyring.jpg"
+            alt="Dainty Wedding ring"
+            style="width: 400px"
+          />
+        </article>
+
+        <article>
+          <img
+            class="showcase-img"
+            src="./resources/images/tworingsimg.jpg"
+            alt="Two silver rings"
+            style="width: 400px"
+          />
+        </article>
       </section>
     </main>
 
