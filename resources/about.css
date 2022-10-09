@@ -35,3 +35,26 @@ strong {
   display: block;
   width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  .mariana-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #about-paragraph {
+    text-transform: none;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 0.6rem;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  #paragraph-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+}

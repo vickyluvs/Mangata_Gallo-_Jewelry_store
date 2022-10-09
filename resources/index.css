@@ -32,6 +32,10 @@ img#logo {
   margin: 0 auto;
   margin-top: 0.7rem;
   padding-bottom: 0.5rem;
+  box-shadow: 10px 7px 5px -1px rgba(153, 142, 142, 0.52);
+  -webkit-box-shadow: 10px 7px 5px -1px rgba(61, 59, 59, 0.52);
+  -moz-box-shadow: 10px 7px 5px -1px rgba(13, 6, 6, 0.52);
+  border-radius: 0.75rem;
 }
 
 nav {
@@ -61,6 +65,9 @@ a {
 
 a:hover {
   cursor: pointer;
+  background-color: #5c657e;
+  color: white;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
 }
 
 #banner {
@@ -69,6 +76,13 @@ a:hover {
   background-size: cover;
   background-position: center;
   height: 70vh;
+  box-shadow: 10px 7px 5px -1px rgba(153, 142, 142, 0.52);
+  -webkit-box-shadow: 10px 7px 5px -1px rgba(61, 59, 59, 0.52);
+  -moz-box-shadow: 10px 7px 5px -1px rgba(13, 6, 6, 0.52);
+}
+
+#banner:hover {
+  animation: appear 5s infinite ease-in;
 }
 
 h1 {
@@ -111,6 +125,7 @@ section#info-cards {
   margin-top: 0.7rem;
   margin-left: 0.5rem;
   margin-bottom: 0.5rem;
+  border: 1px solid black;
 }
 
 article.learn-more {
@@ -124,6 +139,7 @@ article.about {
 article.services {
   background-color: #5c657e;
 }
+
 h2 {
   text-align: center;
   font-size: 0.9rem;
@@ -255,4 +271,50 @@ footer {
 #logo-footer {
   display: block;
   width: 8rem;
+}
+
+img:hover {
+  animation: appear 5s infinite ease-in;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+
+  img#logo,
+  #logo-footer {
+    display: block;
+    width: 5rem;
+  }
+
+  nav {
+    background-color: black;
+    margin: 0.8rem 0 0.8rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.5rem;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+    font-family: initial;
+  }
 }
