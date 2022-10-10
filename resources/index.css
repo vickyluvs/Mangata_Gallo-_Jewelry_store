@@ -32,10 +32,6 @@ img#logo {
   margin: 0 auto;
   margin-top: 0.7rem;
   padding-bottom: 0.5rem;
-  box-shadow: 10px 7px 5px -1px rgba(153, 142, 142, 0.52);
-  -webkit-box-shadow: 10px 7px 5px -1px rgba(61, 59, 59, 0.52);
-  -moz-box-shadow: 10px 7px 5px -1px rgba(13, 6, 6, 0.52);
-  border-radius: 0.75rem;
 }
 
 nav {
@@ -198,7 +194,6 @@ section#img-cards-section {
   height: 80%;
   width: 100%;
   padding: 0.3rem;
-  /* margin-left: 0.2rem; */
 }
 
 section#owner-info {
@@ -206,8 +201,6 @@ section#owner-info {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-
-  /* height: 100vh; */
 }
 
 .mariana-img {
@@ -241,12 +234,6 @@ section#owner-info {
   margin: 0 auto;
 }
 
-/* article#location-para {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-} */
 #store-hours {
   margin-top: 1rem;
 }
@@ -274,7 +261,7 @@ footer {
 }
 
 img:hover {
-  animation: appear 5s infinite ease-in;
+  animation: appear 5s ease-in;
 }
 @keyframes appear {
   0% {
